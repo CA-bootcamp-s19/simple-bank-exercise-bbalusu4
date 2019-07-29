@@ -70,7 +70,7 @@ contract SimpleBank {
     function enroll() public returns (bool){
         address _accountAddress = owner;
         enrolled[_accountAddress] = true;
-        balances[_accountAddress] = 1000000000000;
+        //balances[_accountAddress] = 1000000000000;
         emit LogEnrolled(_accountAddress);
         return enrolled[_accountAddress];
     }
